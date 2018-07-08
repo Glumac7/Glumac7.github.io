@@ -1,0 +1,305 @@
+@media(min-width: 991px)
+{
+	/*FADE IN ANIMATIONS*/
+	/*------------------*/
+	/*FADE IN UP!*/
+	.fadeInUp 
+	{
+		position: relative;
+	  -webkit-animation-name: fadeInUp;
+	  animation-name: fadeInUp;
+	  -webkit-animation-duration: 1.2s;
+	  animation-duration: 1.2s;
+	  -webkit-animation-fill-mode: both;
+	  animation-fill-mode: both;
+	}
+	@-webkit-keyframes fadeInUp 
+	{
+	  0% 
+	  {
+		  opacity: 0;
+		  -webkit-transform: translate3d(0, 30%, 0);
+		  transform: translate3d(0, 30%, 0);
+	  }
+	  100% 
+	  {
+		  opacity: 1;
+		  -webkit-transform: none;
+		  transform: none;
+	  }
+	}
+	@keyframes fadeInUp 
+	{
+	  0% 
+	  {
+		  opacity: 0;
+		  -webkit-transform: translate3d(0, 30%, 0);
+		  transform: translate3d(0, 30%, 0);
+	  }
+	  100% 
+	  {
+		  opacity: 1;
+		  -webkit-transform: none;
+		  transform: none;
+	  }
+	} 
+
+	/*FADE IN RIGT!*/
+	.fadeInRight 
+	{
+		-webkit-animation-name: fadeInRight;
+		animation-name: fadeInRight;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+
+  	@-webkit-keyframes fadeInRight 
+  	{
+	  	0% 
+	  	{
+		  opacity: 0;
+		  -webkit-transform: translate3d(30%, 0, 0);
+		  transform: translate3d(30%, 0, 0);
+	  	}
+	  	100% 
+	  	{
+	  		opacity: 1;
+	  		-webkit-transform: none;
+	  		transform: none;
+	  	}
+    }
+
+	@keyframes fadeInRight 
+	{
+		  0% 
+		  {
+			  opacity: 0;
+			  -webkit-transform: translate3d(30%, 0, 0);
+			  transform: translate3d(30%, 0, 0);
+		  }
+		  100% 
+		  {
+			  opacity: 1;
+			  -webkit-transform: none;
+			  transform: none;
+		  }
+  	}
+  	/************************************/
+  	/*FADE IN ANIMATIONS FOR THE HEADLINE!*/
+	.fadeLeft
+	{
+		position: relative;
+		animation-name: fadeLeft;
+		animation-duration: 1s;
+		animation-fill-mode: forwards; 
+	}
+	@keyframes fadeLeft
+	{
+		0%
+		{
+			right: 100px;
+			opacity: 0;
+		}
+		100%
+		{
+			right: 0;
+			opacity: 1;
+		}
+	}
+
+	.fadeRight
+	{
+		position: relative;
+		animation-name: fadeRight;
+		animation-duration: 1s;
+		animation-fill-mode: forwards; 
+	}
+	@keyframes fadeRight
+	{
+		0%
+		{
+			left: 100px;
+			opacity: 0;
+		}
+		100%
+		{
+			left: 0;
+			opacity: 1;
+		}
+	}
+
+	.fadeUp
+	{
+		position: relative;
+		animation-name: fadeUp;
+		animation-duration: 1s;
+		animation-fill-mode: forwards; 
+	}
+	@keyframes fadeUp
+	{
+		0%
+		{
+			bottom: -50px;
+			opacity: 0;
+		}
+		100%
+		{
+			bottom: 0;
+			opacity: 1;
+		}
+	}
+
+
+	/*********************************/
+  	/*FADE IN LEFT!*/
+	.fadeInLeft 
+	{
+		-webkit-animation-name: fadeInLeft;
+		animation-name: fadeInLeft;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+	@-webkit-keyframes fadeInLeft 
+	{
+		0% 
+		{
+			opacity: 0;
+			-webkit-transform: translate3d(-30%, 0, 0);
+			transform: translate3d(-30%, 0, 0);
+		}
+		100% 
+		{
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		}
+	}
+
+	@keyframes fadeInLeft 
+	{
+		0% 
+		{
+			opacity: 0;
+			-webkit-transform: translate3d(-30%, 0, 0);
+			transform: translate3d(-30%, 0, 0);
+		}
+		100% 
+		{
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		}
+	}
+	/****************************************************/
+	/*LOADER!*/
+	@keyframes spin 
+	{
+	    0% { transform: rotate(0deg); }
+	    100% { transform: rotate(360deg); }
+	}
+	/****************************************************/
+	/*SCROLL DOWN BUTTON ANIMATION*/
+	@keyframes bounce 
+	{
+	  0%,
+	  100%,
+	  20%,
+	  50%,
+	  80% 
+	  {
+	    -webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    transform: translateY(0);
+	  }
+
+	  40% 
+	  {
+	    -webkit-transform: translateY(-10px);
+	    -ms-transform: translateY(-10px);
+	    transform: translateY(-10px);
+	  }
+
+	  60% 
+	  {
+	    -webkit-transform: translateY(-5px);
+	    -ms-transform: translateY(-5px);
+	    transform: translateY(-5px);
+	  }
+	}
+	/****************************************************/
+	/*SKILL BAR ANIMATIONS*/
+	@keyframes prog1{from{width: 0%;}to{width: 85%;}}
+	@keyframes prog2{from{width: 0%;}to{width: 90%;}}
+	@keyframes prog3{from{width: 0%;}to{width: 75%;}}
+	@keyframes prog4{from{width: 0%;}to{width: 80%;}}
+	@keyframes prog5{from{width: 0%;}to{width: 80%;}}
+	@keyframes prog6{from{width: 0%;}to{width: 85%;}}
+	@keyframes prog7{from{width: 0%;}to{width: 75%;}}
+	@keyframes prog8{from{width: 0%;}to{width: 80%;}}
+	.prog1
+	{
+	 	animation-name: prog1;
+	 	animation-duration: 1s;
+	 	animation-fill-mode: forwards;
+	}
+
+	.prog2
+	{
+	 	animation-name: prog2;
+		animation-duration: 1s;
+		animation-delay: .1s;
+	 	animation-fill-mode: forwards;
+	}
+
+	.prog3
+	{
+	 	animation-name: prog3;
+		animation-duration: 1s;
+		animation-delay: .2s;
+	 	animation-fill-mode: forwards;
+	}
+
+	.prog4
+	{
+	 	animation-name: prog4;
+		animation-duration: 1s;
+		animation-delay: .3s;
+	 	animation-fill-mode: forwards;
+	}
+
+	.prog5
+	{
+	 	animation-name: prog5;
+		animation-duration: 1s;
+		animation-delay: .4s;
+	 	animation-fill-mode: forwards;
+	}
+
+	.prog6
+	{
+	 	animation-name: prog6;
+		animation-duration: 1s;
+		animation-delay: .5s;
+	 	animation-fill-mode: forwards;
+	}
+
+	.prog7
+	{
+	 	animation-name: prog7;
+		animation-duration: 1s;
+		animation-delay: .6s;
+	 	animation-fill-mode: forwards;
+	}
+	.prog8
+	{
+	 	animation-name: prog8;
+		animation-duration: 1s;
+		animation-delay: .7s;
+	 	animation-fill-mode: forwards;
+	}
+}
+/****************************************************/

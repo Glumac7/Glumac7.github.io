@@ -1,0 +1,132 @@
+	/*NAVIGATION AND ABOUT STUFF*/
+@media (min-width: 991px)
+{
+	/*NAVIGATION*/
+	.nav-link::after
+	{
+		content: '';
+		display: block;
+		width: 0;
+		height: 2px;
+		background: var(--default-color);
+		transition: width .2s;
+	}
+	.nav-link:hover::after
+	{
+		width: 100%;
+		transition: width .2s;
+	}
+
+	/*-----*/
+	/*ABOUT*/
+	#about-img,.about_me
+	{
+		visibility: hidden;
+	}
+	.progress-bar{width: 0px !important;}
+	.progress
+	{
+		display: none;
+	}
+
+	/*----------------*/
+	/*PROJECT OPACITY!*/
+	#project-container
+	{
+		opacity: 0;
+	}
+
+	/*--------*/
+	/*CONTACT!*/
+	i{transition: all .3s;border-radius: 10%;color:#0090e0;}
+	.icons{opacity: 0;}
+	a i:hover
+	{
+		background: #0090e0;
+		color: #f4f4f4;
+		border-radius: 100%;
+		padding: 20px 28px;
+	}
+	a:nth-child(1) i:hover{padding: 20px 48px;}
+	a:nth-child(4) i:hover{padding: 20px;}
+	a:nth-child(5) i:hover{padding: 20px 25px;}
+	a:nth-child(6) i:hover{padding: 20px;}
+}
+/****************************************************/
+/*SVG STUFF*/
+@media (max-width: 699px) 
+{
+  .svg--lg 
+  {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) 
+{
+  .svg--sm 
+  {
+    display: none;
+  }
+}
+/****************************************************/
+/*CONTAINER WIDTH*/
+@media (min-width: 1300px) 
+{
+	.container{max-width: 1300px;}
+}
+/****************************************************/
+/*HEADER AND LANDING IMAGE/TEXT*/
+@media (max-width: 991px) 
+{
+	main
+	{
+		position: relative;
+		top: 0;
+	}
+	.navbar
+	{
+		position: relative;
+		background: #fff !important;
+		z-index: 99;
+		text-align: center;
+
+	}
+	#navbarSupportedContent ul li{margin: 0 !important;}
+	.navbar-brand, .nav-link{color: #212121 !important;}
+	.navbar-brand{font-size: 30px;}
+	.nav-link{font-size: 14px;}
+
+	#scroll-down
+	{
+		display: none;
+	}
+
+	#main-headline
+	{
+		font-size: 34px;
+	}
+	#map, #map2
+	{
+		height: 350px;
+		opacity: 1;
+	}
+}
+/****************************************************/
+/*ABOUT STUFF*/
+@media(max-width: 767px)
+{
+	#about-img,.about_me
+	{
+		width: 100%;
+		font-size: 14px;
+	}
+	.progress
+	{
+		margin: 15px auto;
+	}
+	#about-main
+	{
+		position: relative;
+	}
+}
