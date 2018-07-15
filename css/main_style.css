@@ -10,9 +10,10 @@ body
 {
 	overflow-x: hidden;
 }
+
 body, html 
 {
-    height: 100% !important;
+  height: 100% !important;
 }
 /************************************/
 /*LOADER!*/
@@ -460,3 +461,4 @@ figure.proj.hover figcaption p
   opacity: 0;
   width: 100%;
 }
+.row{margin: 0;}

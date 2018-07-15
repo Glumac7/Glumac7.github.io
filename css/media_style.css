@@ -132,6 +132,10 @@
 	/*PROJECTS STUFF*/
 	figcaption h2
 	{
-		font-size: 25px;
+		font-size: 24px;
+	}
+	figcaption p
+	{
+		font-size: 16px;
 	}
 }
