@@ -113,9 +113,9 @@
 	}
 }
 /****************************************************/
-/*ABOUT STUFF*/
 @media(max-width: 767px)
 {
+	/*ABOUT STUFF*/
 	#about-img,.about_me
 	{
 		width: 100%;
@@ -128,5 +128,10 @@
 	#about-main
 	{
 		position: relative;
+	}
+	/*PROJECTS STUFF*/
+	figcaption h2
+	{
+		font-size: 25px;
 	}
 }
