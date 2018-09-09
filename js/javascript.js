@@ -8,40 +8,33 @@ function main_page()
 /*MOBILE BURGER ICON!*/
 function burger_icon()
 {
-	var buton = document.getElementById("nav-but");
 	var burger = document.querySelector('.burger-container');
 
-	if (burger.classList) 
-	{ 
-	    burger.classList.toggle("open");
-	} 
+	if (burger.classList) burger.classList.toggle("open");
 	else 
 	{
-	    // For IE9
 	    var classes = burger.className.split(" ");
 	    var i = classes.indexOf("open");
 
-	    if (i >= 0) 
-	        classes.splice(i, 1);
-	    else 
-	        classes.push("open");
-	        burger.className = classes.join(" "); 
+		if (i >= 0) 
+			classes.splice(i, 1);
+	        
+		else 
+			classes.push("open");
 	}
 }
 
 /*HEADER SCROLL EFECT!*/
 window.addEventListener("scroll", function()
 {
-	if(document.body.offsetWidth <= 991)
-	{}
-	else
+	if(document.body.offsetWidth >= 991)
 	{
 		var scrollTop = window.pageYOffset || document.body.scrollTop;
 		var logo = document.querySelector('.navbar-brand');
 		var nav = document.querySelector('#nav');
 		var links = document.getElementById('nav-ul').children;
 
-		if(scrollTop >= 1)
+		if(scrollTop)
 		{
 			nav.style.backgroundColor = "rgba(255, 255, 255, .95)";
 			logo.style.fontSize = "30px";
@@ -69,4 +62,4 @@ window.addEventListener("scroll", function()
 		}
 	}
 
-}, false)
+}, false);

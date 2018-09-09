@@ -234,7 +234,7 @@ main{display: none;position: relative; height: 100%;}
 {
 	position: relative;
 	padding-top: 25px;
-	background: rgba(0, 144, 224, .93);
+	background: rgba(0, 144, 224, .85);
 	z-index: 1;
 }
 
