@@ -461,3 +461,29 @@ figure.proj.hover figcaption p
   width: 100%;
 }
 .row{margin: 0;}
+
+/*Scroll Top*/
+#scroll-top {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  z-index: 3;
+}
+
+#scroll-top-i{
+  border: 2px solid #0090e0;
+  box-sizing: content-box;
+  transition: all .3s;
+  position: relative;
+  top: -40px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background: #0090e0;
+  color: #fff;
+  font-size: 30px;
+}
+
+#scroll-top-i:hover{
+  color: #0090e0;
+  background: #fff;
+}

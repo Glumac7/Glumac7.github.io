@@ -236,10 +236,8 @@
 	@keyframes prog2{from{width: 0%;}to{width: 90%;}}
 	@keyframes prog3{from{width: 0%;}to{width: 95%;}}
 	@keyframes prog4{from{width: 0%;}to{width: 80%;}}
-	@keyframes prog5{from{width: 0%;}to{width: 80%;}}
-	@keyframes prog6{from{width: 0%;}to{width: 85%;}}
-	@keyframes prog7{from{width: 0%;}to{width: 75%;}}
-	@keyframes prog8{from{width: 0%;}to{width: 80%;}}
+	@keyframes prog5{from{width: 0%;}to{width: 75%;}}
+	@keyframes prog6{from{width: 0%;}to{width: 80%;}}
 	.prog1
 	{
 	 	animation-name: prog1;
@@ -287,19 +285,5 @@
 	 	animation-fill-mode: forwards;
 	}
 
-	.prog7
-	{
-	 	animation-name: prog7;
-		animation-duration: 1s;
-		animation-delay: .6s;
-	 	animation-fill-mode: forwards;
-	}
-	.prog8
-	{
-	 	animation-name: prog8;
-		animation-duration: 1s;
-		animation-delay: .7s;
-	 	animation-fill-mode: forwards;
-	}
 }
 /****************************************************/

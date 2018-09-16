@@ -38,19 +38,19 @@
 
 	/*--------*/
 	/*CONTACT!*/
-	i{transition: all .3s;border-radius: 10%;color:#0090e0;}
+	#icon-container i{transition: all .3s;border-radius: 10%;color:#0090e0;}
 	.icons{opacity: 0;}
-	a i:hover
+	#icon-container a i:hover
 	{
 		background: #0090e0;
 		color: #f4f4f4;
 		border-radius: 100%;
 		padding: 20px 28px;
 	}
-	a:nth-child(1) i:hover{padding: 20px 48px;}
-	a:nth-child(4) i:hover{padding: 20px;}
-	a:nth-child(5) i:hover{padding: 20px 25px;}
-	a:nth-child(6) i:hover{padding: 20px;}
+	#icon-container a:nth-child(1) i:hover{padding: 20px 48px;}
+	#icon-container a:nth-child(4) i:hover{padding: 20px;}
+	#icon-container a:nth-child(5) i:hover{padding: 20px 25px;}
+	#icon-container a:nth-child(6) i:hover{padding: 20px;}
 }
 /****************************************************/
 /*SVG STUFF*/
