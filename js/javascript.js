@@ -1,10 +1,3 @@
-function main_page()
-{
-	document.querySelector('nav').style.display = "flex";
-	document.querySelector('main').style.display = "block";
-	document.querySelector('#loader').style.display = "none";
-}
-
 /*MOBILE BURGER ICON!*/
 function burger_icon()
 {
