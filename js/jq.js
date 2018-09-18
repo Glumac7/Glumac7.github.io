@@ -1,14 +1,14 @@
 $(document).ready(() =>
 {	
-	$("#loader").animate({opacity: "0"}, 300);
+	$("#loader").animate({opacity: "0"}, 800);
 
 	setTimeout(() =>{
 		$("#loader").css({display: "none"});
 		$("body").css({opacity: "0"});
-		$("body").animate({opacity: "1"}, 600);
+		$("body").animate({opacity: "1"}, 800);
 		$("nav").css({display: "flex"});
 		$("main").css({display: "block"});
-	}, 300); 
+	}, 800); 
 
 	/*SCROLL DOWN BUTTON!*/
 	$("a").on('click', function(event) 
