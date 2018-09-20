@@ -143,13 +143,13 @@ main{display: none;position: relative; height: 100%;}
 #main-img
 {
 	display: flex;
-	/* The image used */
-  background-image: url("../Images/2.jpg");
-
-  /* Full height */
   height: 100%; 
+}
 
-  /* Center and scale the image nicely */
+#parallax {
+  position: absolute;
+  margin: auto;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background: transparent;
@@ -167,14 +167,16 @@ main{display: none;position: relative; height: 100%;}
 
 #main-headline
 {
+  
+  margin: auto;
   display: inline;
-	margin: auto;
+	
 	font-weight: 700;
 	text-align: center;
 	color: #fff;
   font-family: 'Quicksand', sans-serif;
   font-size: 66px;
-  z-index: 1;
+  z-index: 10;
 }
 
 #scroll-down
@@ -227,7 +229,8 @@ main{display: none;position: relative; height: 100%;}
 }
 #about
 {
-	position: relative;
+  position: relative;
+  background: rgba(255,255,255,1);
   z-index: 0;
 }
 

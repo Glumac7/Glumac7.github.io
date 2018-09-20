@@ -1,14 +1,40 @@
+function parallax(name, value = .5) {
+
+	var parallaxElements = $(name),
+    parallaxQuantity = parallaxElements.length;
+
+	$(window).on('scroll', function () {
+
+	window.requestAnimationFrame(function () {
+
+		for (var i = 0; i < parallaxQuantity; i++) {
+			var currentElement =  parallaxElements.eq(i);
+			var scrolled = $(window).scrollTop();
+				
+				currentElement.css({
+				'transform': 'translate3d(0,' + scrolled * + value + 'px, 0)'
+				});
+			}
+		});
+	});
+}
+
 $(document).ready(() =>
 {	
-	$("#loader").animate({opacity: "0"}, 800);
+	parallax("#parallax", .5);
+	parallax("#main-headline", .35);
+	
+	$("#loader").attr('class', 'puff-out-center');
 
 	setTimeout(() =>{
+
 		$("#loader").css({display: "none"});
-		$("body").css({opacity: "0"});
-		$("body").animate({opacity: "1"}, 800);
+		$("body").addClass('puff-in-center');
 		$("nav").css({display: "flex"});
 		$("main").css({display: "block"});
-	}, 800); 
+		setTimeout(() =>{$("body").removeClass('puff-in-center');},700);
+	}, 700); 
+	
 
 	/*SCROLL DOWN BUTTON!*/
 	$("a").on('click', function(event) 
