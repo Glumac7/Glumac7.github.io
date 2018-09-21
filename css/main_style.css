@@ -41,6 +41,7 @@ body, html
   border: 50px solid var(--default-color);
   border-color: var(--default-color) transparent var(--default-color) transparent;
   animation: lds-hourglass 1.2s infinite;
+  -webkit-animation: lds-hourglass 1.2s infinite;
 }
 
 /************************************/
