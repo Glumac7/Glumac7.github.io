@@ -273,28 +273,24 @@
 	}
 	/****************************************************/
 	/*LOADER!*/
-	@-webkit-keyframes lds-hourglass {
-		0% {
-			transform: rotate(0);
-		}
-		50% {
-			transform: rotate(900deg);
-		}
-		100% {
-			transform: rotate(1800deg);
+	@-webkit-keyframes sk-cubeGridScaleDelay {
+		0%, 70%, 100% {
+			-webkit-transform: scale3D(1, 1, 1);
+							transform: scale3D(1, 1, 1);
+		} 35% {
+			-webkit-transform: scale3D(0, 0, 1);
+							transform: scale3D(0, 0, 1); 
 		}
 	}
-
-	@keyframes lds-hourglass {
-		0% {
-			transform: rotate(0);
-		}
-		50% {
-			transform: rotate(900deg);
-		}
-		100% {
-			transform: rotate(1800deg);
-		}
+	
+	@keyframes sk-cubeGridScaleDelay {
+		0%, 70%, 100% {
+			-webkit-transform: scale3D(1, 1, 1);
+							transform: scale3D(1, 1, 1);
+		} 35% {
+			-webkit-transform: scale3D(0, 0, 1);
+							transform: scale3D(0, 0, 1);
+		} 
 	}
 	/****************************************************/
 	/*SCROLL DOWN BUTTON ANIMATION*/

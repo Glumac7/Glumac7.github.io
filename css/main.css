@@ -18,33 +18,70 @@ body, html {
 
 /************************************/
 /*LOADER!*/
-#loader-container {
-  position: absolute;
+#loader {
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
-  text-align: center;
-  z-index: 10;
 }
 
-#loader {
+.sk-cube-grid {
+  width: 99px;
+  height: 99px;
   margin: auto;
-  display: block;
-  position: relative;
 }
 
-#loader:after {
-  content: " ";
-  display: block;
-  border-radius: 50%;
-  width: 0;
-  height: 0;
-  margin: 6px;
-  box-sizing: border-box;
-  border: 50px solid var(--default-color);
-  border-color: var(--default-color) transparent var(--default-color) transparent;
-  animation: lds-hourglass 1.2s infinite;
-  -webkit-animation: lds-hourglass 1.2s infinite;
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: var(--default-color);
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 /************************************/
@@ -731,26 +768,24 @@ figure.proj.hover figcaption p {
   }
   /****************************************************/
   /*LOADER!*/
-  @-webkit-keyframes lds-hourglass {
-    0% {
-      transform: rotate(0);
+  @-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+      transform: scale3D(1, 1, 1);
     }
-    50% {
-      transform: rotate(900deg);
-    }
-    100% {
-      transform: rotate(1800deg);
+    35% {
+      -webkit-transform: scale3D(0, 0, 1);
+      transform: scale3D(0, 0, 1);
     }
   }
-  @keyframes lds-hourglass {
-    0% {
-      transform: rotate(0);
+  @keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+      transform: scale3D(1, 1, 1);
     }
-    50% {
-      transform: rotate(900deg);
-    }
-    100% {
-      transform: rotate(1800deg);
+    35% {
+      -webkit-transform: scale3D(0, 0, 1);
+      transform: scale3D(0, 0, 1);
     }
   }
   /****************************************************/

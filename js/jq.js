@@ -28,11 +28,11 @@ $(document).ready(() =>
 	}
 	
 	
-	$("#loader").attr('class', 'puff-out-center');
+	$(".").attr('class', 'puff-out-center');
 
 	setTimeout(() =>{
 
-		$("#loader").css({display: "none"});
+		$(".").css({display: "none"});
 		$("body").addClass('puff-in-center');
 		$("nav").css({display: "flex"});
 		$("main").css({display: "block"});
