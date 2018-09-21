@@ -27,7 +27,7 @@ body, html
 }
 #loader {
   margin: auto;
-  display: inline-block;
+  display: block;
   position: relative;
 }
 #loader:after {
