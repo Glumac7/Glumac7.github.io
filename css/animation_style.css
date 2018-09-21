@@ -282,24 +282,19 @@
 
 /****************************************************/
 /*LOADER!*/
-@-webkit-keyframes sk-cubeGridScaleDelay {
-	0%, 70%, 100% {
-		-webkit-transform: scale3D(1, 1, 1);
-						transform: scale3D(1, 1, 1);
-	} 35% {
-		-webkit-transform: scale3D(0, 0, 1);
-						transform: scale3D(0, 0, 1); 
-	}
+@-webkit-keyframes sk-stretchdelay {
+0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+20% { -webkit-transform: scaleY(1.0) }
 }
 
-@keyframes sk-cubeGridScaleDelay {
-	0%, 70%, 100% {
-		-webkit-transform: scale3D(1, 1, 1);
-						transform: scale3D(1, 1, 1);
-	} 35% {
-		-webkit-transform: scale3D(0, 0, 1);
-						transform: scale3D(0, 0, 1);
-	} 
+@keyframes sk-stretchdelay {
+0%, 40%, 100% { 
+	transform: scaleY(0.4);
+	-webkit-transform: scaleY(0.4);
+	}  20% { 
+		transform: scaleY(1.0);
+		-webkit-transform: scaleY(1.0);
+	}
 }
 
 /*PUFF IN ANIMATION*/
