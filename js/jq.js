@@ -19,14 +19,15 @@ function parallax(name, value = .5) {
 	});
 }
 
-$(document).ready(() =>
-{	
+window.addEventListener('load', function(){
+	// Everything has loaded!
+ 
+
 	if ($('body').width() >= 991) 
 	{
 		parallax("#bg", .5);
 		parallax("#main-headline", .35);
 	}
-	
 	
 	$("#loader").attr('class', 'puff-out-center');
 
