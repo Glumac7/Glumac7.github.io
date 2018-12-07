@@ -21,6 +21,8 @@ function parallax(name, value = .5) {
 
 window.onload = function() 
 {	
+	$('#bg').css({width: "100%", height: "100%"})
+
 	if ($('body').width() >= 991) 
 	{
 		parallax("#bg", .5);

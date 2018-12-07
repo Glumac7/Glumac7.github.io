@@ -181,8 +181,7 @@ main {
   position: absolute;
   background: url("../Images/photo.jpg") no-repeat center center;
   /* Full height */
-  height: 100%;
-  width: 100%;
+  
   
   background-size: cover;
   -webkit-background-size: cover;
