@@ -179,7 +179,7 @@ main {
 #bg {
   /* The image used */
   position: absolute;
-  background: url("../Images/2.jpg") no-repeat center center;
+  background: url("../Images/photo.jpg") no-repeat center center;
   /* Full height */
   height: 100%;
   width: 100%;
