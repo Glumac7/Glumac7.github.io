@@ -19,7 +19,7 @@ function parallax(name, value = .5) {
 	});
 }
 
-$(document).ready(() =>
+window.onload = function() 
 {	
 	if ($('body').width() >= 991) 
 	{
@@ -126,4 +126,4 @@ $(document).ready(() =>
 			}
 		);
   	}
-});
+};
