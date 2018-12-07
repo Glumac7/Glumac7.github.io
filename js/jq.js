@@ -27,7 +27,6 @@ window.onload = function()
 		parallax("#main-headline", .35);
 	}
 	
-	
 	$("#loader").attr('class', 'puff-out-center');
 
 	setTimeout(() =>{
