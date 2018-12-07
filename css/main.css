@@ -188,7 +188,6 @@ main {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
 }
 
 #overlay {
@@ -975,6 +974,13 @@ figure.proj.hover figcaption p {
   main {
     position: relative;
     top: 0;
+  }
+
+  #bg {
+    background-size: initial;
+  -webkit-background-size: initial;
+  -moz-background-size: initial;
+  -o-background-size: initial;
   }
 
   .navbar {
