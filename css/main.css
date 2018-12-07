@@ -179,17 +179,11 @@ main {
 #bg {
   /* The image used */
   position: absolute;
-  background-image: url("../Images/2.jpg");
+  background: url("../Images/2.jpg") no-repeat center center;
   /* Full height */
   height: 100%;
   width: 100%;
-  /* Center and scale the image nicely */
-  background-position: center center;
-  -webkit-background-position: center center;
-  -moz-background-position: center center;
-  -o-background-position: center center;
-  background-repeat: no-repeat;
-
+  
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
