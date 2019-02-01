@@ -179,14 +179,14 @@ main {
 #bg {
   /* The image used */
   position: absolute;
-  background: url("../Images/photo.jpg") no-repeat center center;
+  background-image: url("../Images/photo.jpg");
   /* Full height */
-  
-  
+  height: 100%;
+  width: 100%;
+  /* Center and scale the image nicely */
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
 
 #overlay {
@@ -718,7 +718,7 @@ figure.proj.hover figcaption p {
       width: 0%;
     }
     to {
-      width: 80%;
+      width: 85%;
     }
   }
   @keyframes prog5 {
@@ -973,13 +973,6 @@ figure.proj.hover figcaption p {
   main {
     position: relative;
     top: 0;
-  }
-
-  #bg {
-    background-size: initial;
-  -webkit-background-size: initial;
-  -moz-background-size: initial;
-  -o-background-size: initial;
   }
 
   .navbar {
