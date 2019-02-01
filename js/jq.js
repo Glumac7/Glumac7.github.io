@@ -19,6 +19,13 @@ function parallax(name, value = .5) {
 	});
 }
 
+$(window).load(function() {
+	new TypeIt('#main-headline span', {
+		speed: 50
+		
+	  }).go();
+})
+
 window.onload = function() 
 {	
 	$('#bg').css({width: "100%", height: "100%"})

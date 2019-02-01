@@ -57,7 +57,3 @@ window.addEventListener("scroll", function()
 
 }, false);
 
-new TypeIt('#main-headline span', {
-	speed: 50
-	
-  }).go();
