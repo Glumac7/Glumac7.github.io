@@ -334,6 +334,7 @@ main {
 }
 
 #project-container {
+  margin: 5px !important;
   padding: 5px !important;
 }
 
@@ -387,21 +388,28 @@ figure.proj figcaption {
 }
 
 figure.proj h2,
-figure.proj p {
+figure.proj p,
+figure.proj h1,
+figure.proj h5 {
   font-weight: bold !important;
   margin: 0;
   width: 100%;
   opacity: 0;
 }
+figure.proj h5 {
+  font-size: 25px !important;
+}
 
-figure.proj h2 {
+figure.proj h2,
+figure.proj h1 {
   padding: 0 30px;
   display: inline-block;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-figure.proj p {
+figure.proj p,
+figure.proj h5 {
   padding: 0 50px;
   font-size: 1em;
   font-weight: 500;
@@ -425,6 +433,10 @@ figure.proj.hover:after {
 
 figure.proj:hover figcaption h2,
 figure.proj.hover figcaption h2,
+figure.proj:hover figcaption h1,
+figure.proj.hover figcaption h1,
+figure.proj:hover figcaption h5,
+figure.proj.hover figcaption h5,
 figure.proj:hover figcaption p,
 figure.proj.hover figcaption p {
   -webkit-transform: translate3d(0%, 0%, 0);
@@ -434,12 +446,16 @@ figure.proj.hover figcaption p {
 }
 
 figure.proj:hover figcaption h2,
-figure.proj.hover figcaption h2 {
+figure.proj.hover figcaption h2,
+figure.proj:hover figcaption h1,
+figure.proj.hover figcaption h1 {
   opacity: 1;
 }
 
 figure.proj:hover figcaption p,
-figure.proj.hover figcaption p {
+figure.proj.hover figcaption p,
+figure.proj:hover figcaption h5,
+figure.proj.hover figcaption h5  {
   opacity: 0.7;
 }
 
