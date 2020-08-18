@@ -267,7 +267,7 @@ main {
 
 #svg-top {
   position: absolute;
-  top: 0;
+  top: -1px;
   transform: rotateX(180deg);
   width: 100%;
   height: 2vw;
@@ -276,7 +276,7 @@ main {
 
 #svg-bottom {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   transform: rotateY(180deg);
   width: 100%;
   height: 2vw;
@@ -316,6 +316,10 @@ main {
   border-radius: 2px;
   margin: 15px 0;
   margin-right: 20%;
+}
+
+.width0 {
+  width: 0px !important;
 }
 
 /********************************************/
@@ -917,8 +921,23 @@ figure.proj.hover figcaption h5  {
     visibility: hidden;
   }
 
-  .progress-bar {
-    width: 0px !important;
+  .progress-bar-width1 {
+    width: 0px
+  }
+  .progress-bar-width2 {
+    width: 0px
+  }
+  .progress-bar-width3 {
+    width: 0px
+  }
+  .progress-bar-width4 {
+    width: 0px
+  }
+  .progress-bar-width5 {
+    width: 0px
+  }
+  .progress-bar-width6 {
+    width: 0px
   }
 
   .progress {
@@ -991,6 +1010,25 @@ figure.proj.hover figcaption h5  {
   main {
     position: relative;
     top: 0;
+  }
+
+  .progress-bar-width1 {
+    width: 85%
+  }
+  .progress-bar-width2 {
+    width: 90%
+  }
+  .progress-bar-width3 {
+    width: 95%
+  }
+  .progress-bar-width4 {
+    width: 85%
+  }
+  .progress-bar-width5 {
+    width: 75%
+  }
+  .progress-bar-width6 {
+    width: 80%
   }
 
   .navbar {

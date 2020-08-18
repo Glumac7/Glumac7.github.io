@@ -71,6 +71,7 @@ window.onload = function()
 		/*IF NOT ON MOBILE!*/
 	    if($(this).scrollTop() >= $body_height - 150 && $body_width > 800)
 	    {
+
 	    	/*ADD A CLASS TO A SPECIFIC SKILL BAR!*/
 	    	for(var i = 1 ; i < 9 ; i++)
 	    	{
@@ -83,7 +84,6 @@ window.onload = function()
 	    	$('#about-img, .about_me').css({'visibility': 'visible'});/*DISPLAY THE IMAGE AND THE TEXT BENEATH IT!*/
 	    	$('.about_me').addClass('fadeInUp');/*ADD AN ANIMATION TO THE TEXT BENEATH THE IMAGE!*/
 
-	    	
 	    }
 	    /*********************************************/
 	    /*VARIALBLE DECLARATION!*/
